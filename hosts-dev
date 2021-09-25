@@ -1,0 +1,11 @@
+# hosts-dev
+
+[webservers]
+95d2638f261c.mylabserver.com
+f82639c4eb1c.mylabserver.com
+
+[loadbalancers]
+3bd41e39531c.mylabserver.com
+
+[local]
+control c12748effe1c.mylabserver.com
