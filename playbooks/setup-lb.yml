@@ -1,0 +1,17 @@
+# blah
+---
+  - hosts: loadbalancers
+    become: yes
+    tasks:
+      - name: Create template
+        template:
+          src: ../config/lb-config.j2
+          dest: /etc/httpd/conf.d/lb.conf
+          owner: bin
+          group: wheel
+          mode: 064
+
+      - name: Restart apache
+        service:
+          name: httpd
+          state: restarted
