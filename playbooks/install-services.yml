@@ -8,6 +8,11 @@
         yum:
           name: httpd
           state: present
+      - name: Ensure apache starts
+        service:
+          name: httpd
+          state: started
+          enabled: yes
 
   - hosts: webservers
     become: yes
@@ -18,3 +23,8 @@
             - httpd
             - php
           state: present
+      - name: Ensure apache starts
+        service:
+          name: httpd
+          state: started
+          enabled: yes
