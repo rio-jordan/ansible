@@ -8,4 +8,4 @@ f82639c4eb1c.mylabserver.com
 3bd41e39531c.mylabserver.com
 
 [local]
-control
+control ansible_connection=local
