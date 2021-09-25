@@ -1,6 +1,7 @@
 # blah
 ---
   - hosts: webservers:loadbalancers
+    become: true
     tasks:
       - name: Update yum packages
         yum:
