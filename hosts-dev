@@ -1,11 +1,11 @@
 # hosts-dev
 
 [webservers]
-95d2638f261c.mylabserver.com
-f82639c4eb1c.mylabserver.com
+app1 ansible_host=95d2638f261c.mylabserver.com
+app2 ansible_host=f82639c4eb1c.mylabserver.com
 
 [loadbalancers]
-3bd41e39531c.mylabserver.com
+lb1 ansible_host=3bd41e39531c.mylabserver.com
 
 [local]
 control ansible_connection=local
