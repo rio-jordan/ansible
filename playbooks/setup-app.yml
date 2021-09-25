@@ -1,6 +1,7 @@
 # blah
 ---
   - hosts: webservers
+    become: yes
     tasks:
       - name: Upload application file
         copy:
