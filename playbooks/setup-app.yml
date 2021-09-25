@@ -13,7 +13,7 @@
         lineinfile:
           path: /etc/php.ini
           regex: ^short_open_tag
-          line: 'short_open_tag=On'
+          line: 'short_open_tag=Off'
         notify: Restart apache
       
     handlers:  
