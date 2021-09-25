@@ -1,0 +1,9 @@
+# blah
+---
+  - hosts: webservers
+    tasks:
+      - name: Upload application file
+        copy:
+          src: ./index.php
+          dest: /var/www/html
+          mode: 0755
