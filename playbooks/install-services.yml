@@ -2,7 +2,7 @@
 
 ---
   - hosts: loadbalancers
-    become: true
+    become: yes
     tasks:
       - name: Install apache
         yum:
@@ -10,7 +10,7 @@
           state: present
 
   - hosts: webservers
-    become: true
+    become: yes
     tasks:
       - name: Install services
         yum:
